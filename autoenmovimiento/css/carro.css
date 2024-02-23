@@ -1,0 +1,106 @@
+.container{
+    
+    background-image: url(/img/fondooo.png);
+    background-size: cover;
+    background-position: center;
+    height: 55rem;
+    
+    
+}
+.fondoAnimado{
+    animation: fondoMover 4s infinite linear reverse;
+
+}
+
+.carro{
+    width: 25rem;
+    height: 15rem;
+    position: relative;
+    top: 350px;
+    left: 390px;
+}
+
+.llanta1{
+    width: 5rem;
+    position: relative;
+    top: 280px;
+    left: 666px;
+    
+}
+.llanta1Animada{
+    animation: llanta1Rotar 1s forwards linear infinite ;
+}
+.llanta2{
+    width: 5rem;
+    position: relative;
+    top: 280px;
+    left: 353px;
+    
+}
+.llanta2Animada{
+    animation: llanta2Rotar 1s forwards linear infinite ;
+}
+
+@keyframes llanta1Rotar{
+    100%{
+    transform: rotate(365deg);
+}
+}
+@keyframes llanta2Rotar {
+    100%{
+        transform: rotate(365deg);
+    }
+}
+
+.luces{
+    width: 18rem;
+    position: relative;
+    top: 60px;
+    left: 750px;
+   
+    
+}
+.oculto{
+    display: none;
+}
+.lucesAnimada{
+    animation: lucesParpadeo 1s infinite;
+}
+
+@keyframes lucesParpadeo {
+    0%{
+        opacity: 100%;
+    }
+    100%{
+        opacity: 0%;
+    }
+}
+@keyframes fondoMover {
+    100%{
+        background-position-x: 1500px;
+    }
+}
+
+.polvo{
+    width: 372.25px;
+    height: 202px;
+    background: url(/img/polvo.png);
+    position: absolute;
+    top: 400px;
+    left: 130px;
+    z-index: 10;
+    
+   
+}
+.oculto{
+    display: none;
+}
+
+.polvoAnimado{
+    animation: polvo 1s infinite steps(4);
+}
+@keyframes polvo {
+    100%{
+        background-position-x: 785px;
+    }
+}
